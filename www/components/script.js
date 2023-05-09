@@ -54,7 +54,7 @@ function definirAlerta() {
     div.removeChild(novoElemento);
     div.removeChild(novoSpanLimpar);
 
-    alert(` ${assunto} chegou!\nAssunto: ${assunto}\nMensagem: ${mensagem}`);
+    navigator.notification.alert(` ${assunto} chegou!\nAssunto: ${assunto}\nMensagem: ${mensagem}`);
   }, tempoRestante);
 
   if (div.childNodes.length === 0) {
